@@ -64,24 +64,35 @@
 // const calRetirementYear = (age) => {
 //   const leftRetirementYear = 60 - Age(age);
 //   return `${
-//     leftRetirementYear > 0
-//       ? leftRetirementYear + " years left till your retirement!"
+//     leftRetirementYear > 0 ? leftRetirementYear + " years left till your retirement!"
 //       : "It has already been " + -leftRetirementYear + " years that you retired"
 //   }`;
 // };
 
 // console.log(calRetirementYear(1999));
 
-const calcAvg = (a, b, c) => {
-  return (a + b + c) / 3;
-};
+// -------------------------------   1st coding challenge!   ---------------------------------
 
-const avgCaolas = calcAvg(65, 54, 49);
-const avgDelphins = calcAvg(44, 23, 71);
+// const calcAvg = (a, b, c) => {
+//   return (a + b + c) / 3;
+// };
 
-const checkWinner = function (averageOfCaolas, averageOfDelphins) {
-  return averageOfCaolas > averageOfDelphins ? "Caolas win!" : "Delphins win!";
-};
+// const avgCaolas = calcAvg(23, 34, 27);
+// const avgDelphins = calcAvg(85, 54, 41);
 
-console.log(checkWinner(avgCaolas, avgDelphins));
-console.log(avgCaolas, avgDelphins);
+// const checkWinner = function (averageOfCaolas, averageOfDelphins) {
+//   if (averageOfCaolas >= 2 * averageOfDelphins) {
+//     return `Coalas Win🎉 (${averageOfCaolas} vs ${averageOfDelphins})`;
+//   } else if (averageOfDelphins >= 2 * averageOfCaolas) {
+//     return `Delphins Win🎉 (${averageOfCaolas} vs ${averageOfDelphins})`;
+//   } else {
+//     return `No team won the trophy🤷‍♀️ (${averageOfCaolas} vs ${averageOfDelphins})`;
+//   }
+// };
+
+// console.log(checkWinner(avgCaolas, avgDelphins));
+
+// -----------------------------------    Arrays      -----------------------------
+
+const num = new Array(1, 2, 3, 4, 5);
+console.log(num);
