@@ -154,22 +154,39 @@ inside function expression I used template literal ` ${}` and
 instead of if else operators I used conditonal(Ternary) Operators ? :
 */
 
-const calcTip = function (bill) {
-  return `${bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2} `;
-};
+// const calcTip = function (bill) {
+//   return `${bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2} `;
+// };
 
-const bills = [125, 555, 44];
+// const bills = [125, 555, 44];
 
-const tips = [
-  Number(calcTip(bills[0])),
-  Number(calcTip(bills[1])),
-  Number(calcTip(bills[2])),
-];
+// const tips = [
+//   Number(calcTip(bills[0])),
+//   Number(calcTip(bills[1])),
+//   Number(calcTip(bills[2])),
+// ];
 
-const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(bills, tips, total);
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(bills, tips, total);
 
 // !! ----------------------------- OBJECTS ------------------------------------------------
 /*
 In Javascript objects are standalone entity with properties which define their characteristics each property consists of key value pairs.
+!Note: The only difference between Object & Array is that in object order of elements does not matter while in Array order plays important role!
 */
+
+const Abduhalim = {
+  ism: "Abduhalim",
+  familiya: "Orziqulov",
+  yosh: 22,
+  millati: "o'zbek",
+  kasbi: "talaba",
+}; //Abduhalim object has 5 properties.
+
+console.log(Abduhalim);
+
+//! ------------------- There are 2 ways of getting a property of an object -------------------------
+
+// ! -------------------------------- DOT Notation ---------------------------------------------------
+
+console.log(Abduhalim.kasbi);
