@@ -1,0 +1,9 @@
+body {
+  background-color: green;
+}
+
+.title {
+  justify-content: center;
+  display: flex;
+  margin-top: 200px;
+}

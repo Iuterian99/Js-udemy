@@ -176,11 +176,12 @@ In Javascript objects are standalone entity with properties which define their c
 */
 
 const Abduhalim = {
-  firstName: "Abduhalim",
+  firstName: "Abdukhalim",
   lastName: "Orziqulov",
   age: 22,
   nationality: "o'zbek",
   major: "student",
+  friends: ["Mirabbos", "Og`abek", "Moxirbek"],
 }; //Abduhalim object has 5 properties.
 
 // console.log(Abduhalim);
@@ -202,3 +203,11 @@ const Abduhalim = {
 // );
 
 // console.log(Abduhalim[promptquestion]);
+
+// !! -------------------------- Changing property of an Object ----------------------------------
+
+Abduhalim.uzunligi = 1.73; // Through DOT notation
+Abduhalim["xulqi"] = "yaxshi"; // through Bracket notation
+console.log(
+  `${Abduhalim.firstName} has ${Abduhalim.friends.length} friends ${Abduhalim.friends} and his best friend is ${Abduhalim.friends[0]}`
+);
