@@ -1,4 +1,6 @@
-// ---------------------------- switch statements -----------------------------------
+// !! -------------------------- 03 JS fundamental part-2 ------------------------------------
+
+//!! ---------------------------- switch statements -----------------------------------
 
 // const day = "tuesday";
 
@@ -13,7 +15,7 @@
 //     console.log("unday kun yo`q");
 // }
 
-// ------------------ Conditional(Turnary) Operator ----------------------------------
+//!! ------------------ Conditional(Turnary) Operator ----------------------------------
 
 // const age = 19;
 
@@ -71,7 +73,7 @@
 
 // console.log(calRetirementYear(1999));
 
-// -------------------------------   1st coding challenge!   ---------------------------------
+//!! -------------------------------   1st coding challenge!   ---------------------------------
 
 // const calcAvg = (a, b, c) => {
 //   return (a + b + c) / 3;
@@ -92,7 +94,82 @@
 
 // console.log(checkWinner(avgCaolas, avgDelphins));
 
-// -----------------------------------    Arrays      -----------------------------
+//!! -------------------------------------  Arrays      -------------------------------------------
+// Arrays are big containers that are used to store more amount of data
 
 const num = new Array(1, 2, 3, 4, 5);
-console.log(num);
+// console.log(num);
+
+// ----------------------------- Beginning of Add elements ---------------------------------------
+
+//!! ---------------------------------- PUSH() Method ----------------------------------------------
+// Push Method adds alements to the end of an Array
+
+const friends = ["ali", "safar", "jabbor"];
+// friends.push("Malik");
+// console.log(friends); // ["ali", "safar", "jabbor", "Malik"]
+
+//!! ------------------------------- UNSHIFT() Method -----------------------------------------------
+// Unshift method adds elements to the beginning of an Array
+
+// const newLength = friends.unshift("Sardor");
+// console.log(friends);  //  ["Sardor", "ali", "safar", "jabbor"]
+// console.log(newLength);  // 4
+// ----------------------------- End of Add elements ---------------------------------------------
+
+// ----------------------------- Beginning of Remove elements ------------------------------------
+
+//!! ------------------------------------ POP() Method ----------------------------------------------
+// Pop method removes last element of an Array.
+
+// friends.pop();
+// console.log(friends);
+
+//!! ------------------------------ SHift() Method -----------------------------------------------
+// Shift method removes first element of an Array.
+
+// friends.shift();
+// console.log(friends);
+
+// ----------------------------- End of Remove elements ------------------------------------
+
+//!! ------------------------------- indexOf() Method -------------------------------------------
+// indexOf() method returns index of an given element of an Array if that given element is not found in that Array then this method returns -1.
+
+// console.log(friends.indexOf("safar"));
+// console.log(friends.indexOf("malik"));
+// console.log(num.indexOf("5"));
+
+//!! ---------------------------------- includes() -------------------------------------------------
+// includes() method is the same as indexOf() but it returns true or false values
+// !! NOTE:both these indexOf() & includes() methods works in strict check with data types.
+
+// if (friends.includes("ali")) {
+//   console.log("You have a friend called Ali");
+// }
+
+// !! -------------------------------- 2nd coding challenge! ----------------------------------
+/* in this challenge I used function expression and 
+inside function expression I used template literal ` ${}` and
+instead of if else operators I used conditonal(Ternary) Operators ? :
+*/
+
+const calcTip = function (bill) {
+  return `${bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2} `;
+};
+
+const bills = [125, 555, 44];
+
+const tips = [
+  Number(calcTip(bills[0])),
+  Number(calcTip(bills[1])),
+  Number(calcTip(bills[2])),
+];
+
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, total);
+
+// !! ----------------------------- OBJECTS ------------------------------------------------
+/*
+In Javascript objects are standalone entity with properties which define their characteristics each property consists of key value pairs.
+*/
