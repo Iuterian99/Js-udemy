@@ -176,17 +176,29 @@ In Javascript objects are standalone entity with properties which define their c
 */
 
 const Abduhalim = {
-  ism: "Abduhalim",
-  familiya: "Orziqulov",
-  yosh: 22,
-  millati: "o'zbek",
-  kasbi: "talaba",
+  firstName: "Abduhalim",
+  lastName: "Orziqulov",
+  age: 22,
+  nationality: "o'zbek",
+  major: "student",
 }; //Abduhalim object has 5 properties.
 
-console.log(Abduhalim);
+// console.log(Abduhalim);
 
 //! ------------------- There are 2 ways of getting a property of an object -------------------------
+// The only difference between two DOT and Bracket Notations is that in bracket notation we can give expression which produces a value but in dot notation we cannot give expression.
 
 // ! -------------------------------- DOT Notation ---------------------------------------------------
 
-console.log(Abduhalim.kasbi);
+// console.log(Abduhalim.major);
+
+// !! ----------------------------- Bracket Notation ------------------------------------------------
+// const nameword = "Name";
+// console.log(Abduhalim["first" + nameword]);
+// console.log(Abduhalim["last" + nameword]);
+
+// const promptquestion = prompt(
+//   "What do you want to know? firstName, lastName, age, nationality, major ? "
+// );
+
+// console.log(Abduhalim[promptquestion]);
