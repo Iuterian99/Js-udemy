@@ -99,7 +99,7 @@
 
 const num = new Array(1, 2, 3, 4, 5);
 // console.log(num);
-
+//!Note: Javascript has some built-in functions that we can basically apply directly on Arrays. THese built-in fuctions are called "Methods"
 // ----------------------------- Beginning of Add elements ---------------------------------------
 
 //!! ---------------------------------- PUSH() Method ----------------------------------------------
@@ -175,14 +175,14 @@ In Javascript objects are standalone entity with properties which define their c
 !Note: The only difference between Object & Array is that in object order of elements does not matter while in Array order plays important role!
 */
 
-const Abduhalim = {
-  firstName: "Abdukhalim",
-  lastName: "Orziqulov",
-  age: 22,
-  nationality: "o'zbek",
-  major: "student",
-  friends: ["Mirabbos", "Og`abek", "Moxirbek"],
-}; //Abduhalim object has 5 properties.
+// const Abduhalim = {
+//   firstName: "Abdukhalim",
+//   lastName: "Orziqulov",
+//   age: 22,
+//   nationality: "o'zbek",
+//   major: "student",
+//   friends: ["Mirabbos", "Og`abek", "Moxirbek"],
+// }; //Abduhalim object has 5 properties.
 
 // console.log(Abduhalim);
 
@@ -206,8 +206,63 @@ const Abduhalim = {
 
 // !! -------------------------- Changing property of an Object ----------------------------------
 
-Abduhalim.uzunligi = 1.73; // Through DOT notation
-Abduhalim["xulqi"] = "yaxshi"; // through Bracket notation
-console.log(
-  `${Abduhalim.firstName} has ${Abduhalim.friends.length} friends ${Abduhalim.friends} and his best friend is ${Abduhalim.friends[0]}`
-);
+// Abduhalim.uzunligi = 1.73; // Through DOT notation
+// Abduhalim["xulqi"] = "yaxshi"; // through Bracket notation
+// console.log(
+//   `${Abduhalim.firstName} has ${Abduhalim.friends.length} friends ${Abduhalim.friends} and his best friend is ${Abduhalim.friends[0]}`
+// );
+
+//! Function is another type of value
+// !we can store functions inside of an object but we can only use function expression not function decloration!
+//!Note: Any Function that attached to an object is called "Method"
+
+/*
+const FunctionName = function(parameter){
+  return statements;
+}
+*/
+
+// const Abduhalim = {
+//   firstName: "Abdukhalim",
+//   lastName: "Orziqulov",
+//   birthYear: 1999,
+//   calcAge: function () {
+//     return 2022 - this.birthYear; //! "this" keyword or "this" variable is basically equal to the object on which the method is called!
+//   },
+//   nationality: "o'zbek",
+//   major: "student",
+//   friends: ["Mirabbos", "Og`abek", "Moxirbek"],
+// };
+
+// console.log(Abduhalim.calcAge()); // Calling that function using Dot notoation!
+// console.log(Abduhalim["calcAge"]()); // Calling that function using Bracket notoation!
+
+/*
+If we want recall function of an object multiple times for small projects or for small calculations it does not take a lot of time but in big projects it would take a lot of time and it will also be harmful for comp to calculate multiple times to avoid this situation we can store that result into new created property and then we can simply call it! 
+*/
+
+// const Abduhalim = {
+//   firstName: "Abdukhalim",
+//   lastName: "Orziqulov",
+//   birthYear: 1999,
+//   calcAge: function () {
+//     this.age = 2022 - this.birthYear; //! we are creating "age" property using "this" keyword!
+//     return this.age;
+//   },
+//   nationality: "o'zbek",
+//   major: "student",
+//   friends: ["Mirabbos", "Og`abek", "Moxirbek"],
+//   hasDriverLicense: true,
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${
+//       this.major
+//     } and ${
+//       Abduhalim.hasDriverLicense
+//         ? "He has driver's licence"
+//         : "He does not have driver's licence"
+//     }`;
+//   },
+// };
+// //! First we should call calcAge() function itself before using age property
+
+// console.log(Abduhalim.getSummary());
