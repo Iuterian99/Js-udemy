@@ -1,3 +1,52 @@
+//!========================================== Mundarija =================================================
+/* Line   Topic
+   52    Switch statements
+   67    Conditional(Turnary) Operator
+   125   1st coding challenge!
+   146   Arrays
+   154   Push method()
+   161   Unshift method()
+   171   Pop method()
+   177   Shift method()
+   185   indexOf() Method
+   192   includes()
+   200   2nd coding challenge!
+   221   OBJECTS
+   241   DOT Notation
+   245   Bracket Notation
+   256   Changing property of an Object
+   319   3rd Coding Challenge
+   361   Foor Loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 // !! -------------------------- 03 JS fundamental part-2 ------------------------------------
 
 //!! ---------------------------- switch statements -----------------------------------
@@ -266,3 +315,53 @@ If we want recall function of an object multiple times for small projects or for
 // //! First we should call calcAge() function itself before using age property
 
 // console.log(Abduhalim.getSummary());
+
+// ! -------------------------------- 3rd Coding Challenge --------------------------------------------------------
+
+// const Marks = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   BMI: function () {
+//     return this.mass / (this.height * this.height);
+//   },
+// };
+
+// const John = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
+//   BMI: function () {
+//     return this.mass / (this.height * this.height);
+//   },
+// };
+
+// console.log(
+//   `${
+//     Marks.BMI() > John.BMI()
+//       ? Marks.fullName +
+//         "'s BMI " +
+//         Marks.BMI() +
+//         " is higher than " +
+//         John.fullName +
+//         "'s " +
+//         John.BMI() +
+//         "!"
+//       : John.fullName +
+//         "'s BMI " +
+//         John.BMI() +
+//         " is higher than " +
+//         Marks.fullName +
+//         "'s " +
+//         Marks.BMI() +
+//         "!"
+//   }`
+// );
+
+// !! ------------------------------------ For Loop ----------------------------------------------------
+// for loop is for repitation!
+// for loop keeps running while condition is true!
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Abduhalim ${rep}`);
+}
