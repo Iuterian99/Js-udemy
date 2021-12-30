@@ -146,7 +146,7 @@
 //!! -------------------------------------  Arrays      -------------------------------------------
 // Arrays are big containers that are used to store more amount of data
 
-const num = new Array(1, 2, 3, 4, 5);
+// const num = new Array(1, 2, 3, 4, 5);
 // console.log(num);
 //!Note: Javascript has some built-in functions that we can basically apply directly on Arrays. THese built-in fuctions are called "Methods"
 // ----------------------------- Beginning of Add elements ---------------------------------------
@@ -154,7 +154,7 @@ const num = new Array(1, 2, 3, 4, 5);
 //!! ---------------------------------- PUSH() Method ----------------------------------------------
 // Push Method adds alements to the end of an Array
 
-const friends = ["ali", "safar", "jabbor"];
+// const friends = ["ali", "safar", "jabbor"];
 // friends.push("Malik");
 // console.log(friends); // ["ali", "safar", "jabbor", "Malik"]
 
@@ -362,6 +362,35 @@ If we want recall function of an object multiple times for small projects or for
 // for loop is for repitation!
 // for loop keeps running while condition is true!
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Abduhalim ${rep}`);
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Abduhalim ${rep}`);
+// }
+
+// const friends = [
+//   "ali",
+//   "safar",
+//   "jabbor",
+//   true,
+//   1999,
+//   2000 - 200,
+//   [1, 2, 3, 4],
+// ];
+
+// const types = [];
+
+// for (let i = 0; i < friends.length; i++) {
+//   console.log(friends[i], typeof friends[i]);
+// types[i] = typeof friends[i]; //filling free types Array
+// types.push(typeof friends[i]); //filling types Array using push method.
+// }
+
+// console.log(types);
+
+const years = [1993, 1995, 1999, 2003];
+const ages = [];
+
+for (let i = 0; i <= years.length; i++) {
+  ages.push(2022 - years[i]);
 }
+
+console.log(ages);
