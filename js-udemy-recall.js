@@ -386,11 +386,37 @@ If we want recall function of an object multiple times for small projects or for
 
 // console.log(types);
 
-const years = [1993, 1995, 1999, 2003];
-const ages = [];
+// const years = [1993, 1995, 1999, 2003];
+// const ages = [];
 
-for (let i = 0; i <= years.length; i++) {
-  ages.push(2022 - years[i]);
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2022 - years[i]);
+// }
+
+// console.log(ages);
+
+//!! ----------------------------- Continue & Break statements in for loop ------------------------------------
+
+const friends = [
+  "ali",
+  "safar",
+  "jabbor",
+  true,
+  1999,
+  2000 - 200,
+  [1, 2, 3, 4],
+];
+
+// console.log("-----" + friends + "----------------");
+// for (let i = 0; i < friends.length; i++) {
+//   if (typeof friends[i] === "string") continue; //! continue! ifdagi shart true bo`lsa loopni to`xtatmaydi to false bo`guncha false bo`lsa keyingi qatorga tushib natijani chiqaradi!
+
+//   console.log(friends[i], typeof friends[i]);
+// }
+
+console.log("-----" + friends + "----------------");
+for (let i = 0; i < friends.length; i++) {
+  if (typeof friends[i] === "string") break; //! Break! ifdagi shart true bo`lishi bilan loopni to`xtatib qo`yadi!
+
+  console.log(friends[i], typeof friends[i]);
 }
-
-console.log(ages);
