@@ -47,9 +47,9 @@
 
 
 */
-// !! -------------------------- 03 JS fundamental part-2 ------------------------------------
+// !!               -------------------------- 03 JS fundamental part-2 ------------------------------------
 
-//!! ---------------------------- switch statements -----------------------------------
+//!! ---------------------------- switch statements ---------------------------------------------------------------
 
 // const day = "tuesday";
 
@@ -64,7 +64,7 @@
 //     console.log("unday kun yo`q");
 // }
 
-//!! ------------------ Conditional(Turnary) Operator ----------------------------------
+//!! ------------------ Conditional(Turnary) Operator ------------------------------------------------------------
 
 // const age = 19;
 
@@ -80,7 +80,7 @@
 //   `The bill was ${bill} , the tip was ${tip}, and the total value ${bill + tip}`
 // );
 
-// ------------------- The same as below -------------------------------------------------
+// ------------------- The same as below ------------------------------------------
 
 // if (bill >= 50 && bill <= 300) {
 //   console.log(bill + bill * tip);
@@ -122,7 +122,7 @@
 
 // console.log(calRetirementYear(1999));
 
-//!! -------------------------------   1st coding challenge!   ---------------------------------
+//!! -------------------------------   1st coding challenge!   --------------------------------------------------
 
 // const calcAvg = (a, b, c) => {
 //   return (a + b + c) / 3;
@@ -143,7 +143,7 @@
 
 // console.log(checkWinner(avgCaolas, avgDelphins));
 
-//!! -------------------------------------  Arrays      -------------------------------------------
+//!! -------------------------------------  Arrays      ------------------------------------------------------------
 // Arrays are big containers that are used to store more amount of data
 
 // const num = new Array(1, 2, 3, 4, 5);
@@ -151,14 +151,14 @@
 //!Note: Javascript has some built-in functions that we can basically apply directly on Arrays. THese built-in fuctions are called "Methods"
 // ----------------------------- Beginning of Add elements ---------------------------------------
 
-//!! ---------------------------------- PUSH() Method ----------------------------------------------
+//!! ---------------------------------- PUSH() Method ----------------------------------
 // Push Method adds alements to the end of an Array
 
 // const friends = ["ali", "safar", "jabbor"];
 // friends.push("Malik");
 // console.log(friends); // ["ali", "safar", "jabbor", "Malik"]
 
-//!! ------------------------------- UNSHIFT() Method -----------------------------------------------
+//!! ------------------------------- UNSHIFT() Method -----------------------------------
 // Unshift method adds elements to the beginning of an Array
 
 // const newLength = friends.unshift("Sardor");
@@ -168,13 +168,13 @@
 
 // ----------------------------- Beginning of Remove elements ------------------------------------
 
-//!! ------------------------------------ POP() Method ----------------------------------------------
+//!! ------------------------------------ POP() Method ------------------------------------
 // Pop method removes last element of an Array.
 
 // friends.pop();
 // console.log(friends);
 
-//!! ------------------------------ SHift() Method -----------------------------------------------
+//!! ------------------------------ SHift() Method ----------------------------------------
 // Shift method removes first element of an Array.
 
 // friends.shift();
@@ -182,14 +182,14 @@
 
 // ----------------------------- End of Remove elements ------------------------------------
 
-//!! ------------------------------- indexOf() Method -------------------------------------------
+//!! ------------------------------- indexOf() Method ----------------------------------------
 // indexOf() method returns index of an given element of an Array if that given element is not found in that Array then this method returns -1.
 
 // console.log(friends.indexOf("safar"));
 // console.log(friends.indexOf("malik"));
 // console.log(num.indexOf("5"));
 
-//!! ---------------------------------- includes() -------------------------------------------------
+//!! ---------------------------------- includes() --------------------------------------------
 // includes() method is the same as indexOf() but it returns true or false values
 // !! NOTE:both these indexOf() & includes() methods works in strict check with data types.
 
@@ -235,14 +235,14 @@ In Javascript objects are standalone entity with properties which define their c
 
 // console.log(Abduhalim);
 
-//! ------------------- There are 2 ways of getting a property of an object -------------------------
+//! ------------------- There are 2 ways of getting a property of an object ----------------
 // The only difference between two DOT and Bracket Notations is that in bracket notation we can give expression which produces a value but in dot notation we cannot give expression.
 
-// ! -------------------------------- DOT Notation ---------------------------------------------------
+// ! -------------------------------- DOT Notation ------------------------------------------
 
 // console.log(Abduhalim.major);
 
-// !! ----------------------------- Bracket Notation ------------------------------------------------
+// !! ----------------------------- Bracket Notation -----------------------------------------
 // const nameword = "Name";
 // console.log(Abduhalim["first" + nameword]);
 // console.log(Abduhalim["last" + nameword]);
@@ -253,7 +253,7 @@ In Javascript objects are standalone entity with properties which define their c
 
 // console.log(Abduhalim[promptquestion]);
 
-// !! -------------------------- Changing property of an Object ----------------------------------
+// !! -------------------------- Changing property of an Object -----------------------------
 
 // Abduhalim.uzunligi = 1.73; // Through DOT notation
 // Abduhalim["xulqi"] = "yaxshi"; // through Bracket notation
@@ -358,7 +358,7 @@ If we want recall function of an object multiple times for small projects or for
 //   }`
 // );
 
-// !! ------------------------------------ For Loop ----------------------------------------------------
+// !! ------------------------------------ For Loop ---------------------------------------------------------------
 // for loop is for repitation!
 // for loop keeps running while condition is true!
 
@@ -395,7 +395,7 @@ If we want recall function of an object multiple times for small projects or for
 
 // console.log(ages);
 
-//!! ----------------------------- Continue & Break statements in for loop ------------------------------------
+//!! ------------------------- Continue & Break statements in for loop ----------------
 
 const friends = [
   "ali",
@@ -408,15 +408,35 @@ const friends = [
 ];
 
 // console.log("-----" + friends + "----------------");
+for (let i = 0; i < friends.length; i++) {
+  if (typeof friends[i] === "string") continue; //! continue! ifdagi shart true bo`lsa loopni to`xtatmaydi to false bo`guncha false bo`lsa keyingi qatorga tushib keyingi qatordagi natijani chiqaradi!
+
+  console.log(friends[i], typeof friends[i]);
+}
+
+// console.log("-----" + friends + "----------------");
 // for (let i = 0; i < friends.length; i++) {
-//   if (typeof friends[i] === "string") continue; //! continue! ifdagi shart true bo`lsa loopni to`xtatmaydi to false bo`guncha false bo`lsa keyingi qatorga tushib natijani chiqaradi!
+//   if (typeof friends[i] === "number") break; //! Break! ifdagi shart true bo`lishi bilan loopni to`xtatib qo`yadi!
 
 //   console.log(friends[i], typeof friends[i]);
 // }
 
-console.log("-----" + friends + "----------------");
-for (let i = 0; i < friends.length; i++) {
-  if (typeof friends[i] === "string") break; //! Break! ifdagi shart true bo`lishi bilan loopni to`xtatib qo`yadi!
+// !------------------------ Looping Backwards & Loops in Loops --------------------------
 
-  console.log(friends[i], typeof friends[i]);
-}
+// Looping Backwards
+
+// for (let i = friends.length - 1; i >= 0; i--) {
+//   console.log(i, friends[i]);
+// }
+
+// Loops in Loops
+
+// for (let i = 1; i <= 3; i++) {
+//   console.log(`${i} cycle of doing exercises!`);
+
+//   for (let i = 10; i <= 15; i++) {
+//     console.log(`Do ${i} push ups 🏋️‍♂️`);
+//   }
+// }
+
+// !--------------------------------------------- WHILE LOOP -----------------------------------------------------
