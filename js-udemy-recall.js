@@ -476,8 +476,19 @@ function calcTip() {
     }
     totals.push(bills[i] + tips[i]);
   }
-  console.log(`Your bills are ${bills}, and your corresponding tips are`);
+  console.log(
+    `Your bills are ${bills}, and your corresponding tips are ${tips} and total values are ${totals}`
+  );
 }
 
 calcTip();
-// console.log(tips);
+console.log("---------------------------------------------------------");
+function calcAverage(arr) {
+  var sum = 0;
+  for (i of arr) {
+    sum += i;
+  }
+  console.log(sum, sum / arr.length);
+}
+
+calcAverage(totals);
