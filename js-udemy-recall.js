@@ -466,17 +466,17 @@ const totals = new Array();
 
 function calcTip() {
   var tip;
-  for (let i of bills) {
-    if (i > 50 && i < 300) {
-      tip = i * 0.15;
+  for (let i = 0; i < bills.length; i++) {
+    if (bills[i] > 50 && bills[i] < 300) {
+      tip = bills[i] * 0.15;
       tips.push(tip);
     } else {
-      tip = i * 0.2;
+      tip = bills[i] * 0.2;
       tips.push(tip);
     }
+    totals.push(bills[i] + tips[i]);
   }
-
-  console.log(tips);
+  console.log(`Your bills are ${bills}, and your corresponding tips are`);
 }
 
 calcTip();
