@@ -397,22 +397,22 @@ If we want recall function of an object multiple times for small projects or for
 
 //!! ------------------------- Continue & Break statements in for loop ----------------
 
-const friends = [
-  "ali",
-  "safar",
-  "jabbor",
-  true,
-  1999,
-  2000 - 200,
-  [1, 2, 3, 4],
-];
+// const friends = [
+//   "ali",
+//   "safar",
+//   "jabbor",
+//   true,
+//   1999,
+//   2000 - 200,
+//   [1, 2, 3, 4],
+// ];
 
 // console.log("-----" + friends + "----------------");
-for (let i = 0; i < friends.length; i++) {
-  if (typeof friends[i] === "string") continue; //! continue! ifdagi shart true bo`lsa loopni to`xtatmaydi to false bo`guncha false bo`lsa keyingi qatorga tushib keyingi qatordagi natijani chiqaradi!
+// for (let i = 0; i < friends.length; i++) {
+//   if (typeof friends[i] === "string") continue; //! continue! ifdagi shart true bo`lsa loopni to`xtatmaydi to false bo`guncha false bo`lsa keyingi qatorga tushib keyingi qatordagi natijani chiqaradi!
 
-  console.log(friends[i], typeof friends[i]);
-}
+//   console.log(friends[i], typeof friends[i]);
+// }
 
 // console.log("-----" + friends + "----------------");
 // for (let i = 0; i < friends.length; i++) {
@@ -440,3 +440,44 @@ for (let i = 0; i < friends.length; i++) {
 // }
 
 // !--------------------------------------------- WHILE LOOP -----------------------------------------------------
+// This Loop is called While loop because this loop will run while the condition is true!
+// While loop is more versatile than FOR Loop it means it can be used in larger variaty of situations that is because it does not need counter. All While loop needs is that condition which needs to stay true for staying condition true
+
+// let num = 1;
+// while (num < 10) {
+//   console.log(num);
+//   num++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// while (dice !== 6) {
+//   console.log(`Your roller is ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) {
+//     console.log("While loop is going to end ...");
+//   }
+// }
+
+// !------------------------------------------ 4th Coding challenge ------------------------------------------------
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = new Array();
+
+function calcTip() {
+  var tip;
+  for (let i of bills) {
+    if (i > 50 && i < 300) {
+      tip = i * 0.15;
+      tips.push(tip);
+    } else {
+      tip = i * 0.2;
+      tips.push(tip);
+    }
+  }
+
+  console.log(tips);
+}
+
+calcTip();
+// console.log(tips);
