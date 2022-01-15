@@ -439,7 +439,7 @@ If we want recall function of an object multiple times for small projects or for
 //   }
 // }
 
-// !--------------------------------------------- WHILE LOOP -----------------------------------------------------
+// !--------------------------------------------- WHILE LOOP ---------------------------------------------
 // This Loop is called While loop because this loop will run while the condition is true!
 // While loop is more versatile than FOR Loop it means it can be used in larger variaty of situations that is because it does not need counter. All While loop needs is that condition which needs to stay true for staying condition true
 
@@ -458,7 +458,7 @@ If we want recall function of an object multiple times for small projects or for
 //   }
 // }
 
-// !------------------------------------------ 4th Coding challenge ------------------------------------------------
+// !------------------------------------------ 4th Coding challenge ---------------------------------------
 
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
@@ -490,5 +490,4 @@ function calcAverage(arr) {
   }
   console.log(sum, sum / arr.length);
 }
-
 calcAverage(totals);
